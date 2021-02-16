@@ -18,5 +18,8 @@ Rails.application.routes.draw do
   get "favorites/index"
   post "/favorites",to:"favorites#create"
   delete "/favorites",to:"favorites#destroy"
+  
+  get "comments/new"
+  post "comments/create",to:"comments#create"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
