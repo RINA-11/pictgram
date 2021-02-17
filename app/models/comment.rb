@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
   
-  validates:contents,presence:true
+  validates:content,presence:true
   
   belongs_to:user
   belongs_to:topic

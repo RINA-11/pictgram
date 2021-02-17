@@ -20,6 +20,6 @@ Rails.application.routes.draw do
   delete "/favorites",to:"favorites#destroy"
   
   get "comments/new"
-  post "comments/create",to:"comments#create"
+  post "/comments",to:"comments#create"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
